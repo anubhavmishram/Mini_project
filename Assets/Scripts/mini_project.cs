@@ -8,8 +8,7 @@ public class mini_project : MonoBehaviour
     public GameObject[] objects;
     public GameObject[] waypoints;
     public float moveSpeed;
-    public float rotationSpeed;
-    private float WPradius = 1;
+    private float WPradius = 0.5f;
     private int currentWaypoint = 0;
     private int waypointMoved = 0;
     private int currentObject = 0;
@@ -57,16 +56,12 @@ public class mini_project : MonoBehaviour
             }
         }
         objectToMove.transform.position = Vector3.MoveTowards(objectToMove.transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * moveSpeed); 
-        objectToMove.transform.rotation = Quaternion.RotateTowards(objectToMove.transform.rotation, waypoints[currentWaypoint].transform.rotation, Time.deltaTime * rotationSpeed); 
+        objectToMove.transform.eulerAngles = new Vector3(waypoints[currentWaypoint-1].transform.eulerAngles.x,
+                                                          waypoints[currentWaypoint-1].transform.eulerAngles.y,
+                                                          waypoints[currentWaypoint-1].transform.eulerAngles.z  ); 
     }
 
-    private void OnTriggerEnter(Collider collider){
 
-    }
-
-    private void OnTriggerExit(Collider collider){
-        
-    }
 
     private void NextButtonClick(){
         if(nextButtonClicked == false){

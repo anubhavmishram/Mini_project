@@ -37,8 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\mini_project.cs" />
-     <Compile Include="Assets\Scripts\dragobject.cs" />
      <Compile Include="Assets\Scripts\Cameramovement.cs" />
+     <Compile Include="Assets\Scripts\dragobject.cs" />
+     <Compile Include="Assets\Scripts\TargetScript.cs" />
      <None Include="Assets\interface.uxml" />
      <None Include="Assets\USS\interface.uss" />
     <Reference Include="UnityEngine">
@@ -741,9 +742,17 @@
       <Project>{78f99a1c-2ac6-ae1e-5ade-70846941a314}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{4bb1449e-5924-7805-8f25-b879a3343454}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
       <Project>{9b31df8f-8ab6-228e-c7ea-ec61413f3a65}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{39a2422a-662f-04ad-0e50-84dcf0a40ec2}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{dcc4d02c-9196-7064-4892-0f053fcee9a0}</Project>
