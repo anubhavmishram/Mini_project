@@ -60,6 +60,14 @@ public class mini_project : MonoBehaviour
         objectToMove.transform.rotation = Quaternion.RotateTowards(objectToMove.transform.rotation, waypoints[currentWaypoint].transform.rotation, Time.deltaTime * rotationSpeed); 
     }
 
+    private void OnTriggerEnter(Collider collider){
+
+    }
+
+    private void OnTriggerExit(Collider collider){
+        
+    }
+
     private void NextButtonClick(){
         if(nextButtonClicked == false){
             nextButtonClicked = true;

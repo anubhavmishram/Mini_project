@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\mini_project.cs" />
      <Compile Include="Assets\Scripts\dragobject.cs" />
+     <Compile Include="Assets\Scripts\Cameramovement.cs" />
      <None Include="Assets\interface.uxml" />
      <None Include="Assets\USS\interface.uss" />
     <Reference Include="UnityEngine">
