@@ -1,6 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement name="button_interface" style="justify-content: space-around; height: 100%; width: 100%; align-items: flex-end; flex-direction: row; flex-wrap: nowrap; white-space: normal;">
         <ui:Button text="Next" display-tooltip-when-elided="true" name="next_button" style="align-items: stretch; width: 50%; height: 5%;" />
-        <ui:Button text="Start" display-tooltip-when-elided="true" name="start_reset_button" style="-unity-text-align: middle-center; white-space: nowrap; width: 50%; height: 5%;" />
     </ui:VisualElement>
 </ui:UXML>
